@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNV CAMARA Mock Console</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Phone Verification Mock Console</h1>
+        <p>Generate mock request data and test CAMARA verification endpoints quickly.</p>
+      </header>
+
+      <section class="panel">
+        <h2>Create Session</h2>
+        <div class="row">
+          <label for="phoneNumber">Phone Number (E.164)</label>
+          <input id="phoneNumber" type="text" value="+14155552671" />
+        </div>
+        <div class="actions">
+          <button id="btnGenPhone" class="secondary">Generate Phone</button>
+          <button id="btnCreate">Create Session</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Check Session</h2>
+        <div class="row">
+          <label for="sessionId">Session ID</label>
+          <input id="sessionId" type="text" placeholder="Created session ID" />
+        </div>
+        <div class="row">
+          <label for="deviceIp">Device IP</label>
+          <input id="deviceIp" type="text" value="203.0.113.18" />
+        </div>
+        <div class="actions">
+          <button id="btnGenIp" class="secondary">Generate IP</button>
+          <button id="btnCheck">Check Verification</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Session Queries</h2>
+        <div class="actions">
+          <button id="btnGetOne" class="secondary">Get Session</button>
+          <button id="btnGetAll" class="secondary">List Sessions</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Output</h2>
+        <pre id="output" class="output">Ready.</pre>
+      </section>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
