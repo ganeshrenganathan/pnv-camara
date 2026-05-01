@@ -6,7 +6,8 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node --watch src/server.js"
+    "dev": "node --watch src/server.js",
+    "test": "MOCK_CAMARA=true node --test tests/utils.test.js tests/adapters.test.js tests/verificationService.test.js"
   },
   "keywords": [
     "camara",
